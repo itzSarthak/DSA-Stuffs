@@ -1,0 +1,17 @@
+    ** SUMMARY
+       
+        ## What is Sliding Window Technique ?
+        ## Why we need Sliding Window Technique ?
+
+            Window Sliding Technique is a computational technique which
+            aims to reduce the use of nested loop and replace it with a single loop, 
+            thereby reducing the time complexity.
+
+        ## How to identify Sliding Window Technique ?
+            1. Array/Strings
+            2. SubArray/SubStrings
+            3. Window Size (k)          (Given / Find)
+            4. Condition / Calculation. (Fixed / Variable) 
+
+
+        ## Fixed Vs Variable Size .
