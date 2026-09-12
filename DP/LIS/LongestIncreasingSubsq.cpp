@@ -55,7 +55,7 @@ int lis(vector<int>& nums)
 }   
 
 
-// Better Approach **
+// LIS (Better Approach) **
 int lis(vector<int>& nums)
 {
     int n = nums.size();
@@ -139,7 +139,7 @@ void printlis(vector<int>& nums)
             ans = dp[idx];
             lastIdx = idx;
         }
-    }
+    } 
 
 
     // now we have a hash[] and lastIdx 
