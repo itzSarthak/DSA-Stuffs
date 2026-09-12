@@ -32,8 +32,7 @@ int plcs(string s1,string s2)
     int n = s1.size();
     int m = s2.size();
 
-    // Here we do shifting to accomodated base case from memoization **
-    vector<vector<int>>dp(n + 1,vector<int>(m + 1,-1));
+    vector<vector<int>>dp(n + 1,vector<int>(m + 1,0));
 
     // Here we do shifting to accomodated base case from memoization **
     // basically idx1 & idx2 of this is right shifted version of idx1,idx2 of memoization **
@@ -57,6 +56,8 @@ int plcs(string s1,string s2)
 
             else
                 dp[idx1][idx2] = max(dp[idx1 - 1][idx2],dp[idx1][idx2 - 1]);
+                // If I can't match let say (B with X), which character should I throw away?
+                // we have two possibilities hence here we take max of both ways **
         }
     }
 
